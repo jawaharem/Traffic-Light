@@ -1,0 +1,232 @@
+/* Margining  */
+body {
+  margin: 20px;
+}
+/* Screen Background*/
+.screen {
+  background-image: url(wall2.jpg);
+  background-repeat: no-repeat;
+  z-index: -3;
+  height: 600px;
+}
+/* Traffic Body */
+.traffic_body {
+  width: 80px;
+  height: 250px;
+  border: 5px solid black;
+  background-color: rgba(128, 128, 128, 0.404);
+  position: relative;
+  left: 500px;
+  top: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+/* Traffic stand */
+.traffic-stand {
+  width: 10px;
+  height: 250px;
+  border: 2px solid black;
+  background-color: black;
+  position: relative;
+  left: 538px;
+  top: 28px;
+}
+/* Traffic lights */
+.stop,
+.go,
+.ready {
+  height: 65px;
+  width: 65px;
+  border: 2px solid black;
+  border-radius: 100%;
+  margin: 5px;
+  background-color: rgb(73, 68, 68);
+}
+/* Hovering on red */
+.stop:hover {
+  background-color: red;
+  box-shadow: 0px 0px 1px white, 0px 0px 5px white, 0px 0px 10px white,
+    0px 0px 15px red, 0px 0px 30px red, 0px 0px 40px orangered,
+    0px 0px 100px orangered, 0px 0px 150px orangered;
+}
+.stop:hover .red {
+  color: red;
+  display: block;
+}
+.stop:hover #stop {
+  display: block;
+}
+/* Hovering on yellow*/
+.ready:hover {
+  background-color: orange;
+  box-shadow: 0px 0px 1px white, 0px 0px 5px white, 0px 0px 10px white,
+    0px 0px 15px yellow, 0px 0px 30px yellow, 0px 0px 40px orangered,
+    0px 0px 100px orangered, 0px 0px 150px orangered;
+}
+.ready:hover .yel {
+  color: yellow;
+  display: block;
+}
+.ready:hover #set {
+  display: block;
+}
+/* Hovering on green */
+.go:hover {
+  background-color: rgb(17, 255, 17);
+  box-shadow: 0px 0px 1px white, 0px 0px 5px white, 0px 0px 10px white,
+    0px 0px 15px green, 0px 0px 30px green, 0px 0px 40px green,
+    0px 0px 50px green, 0px 0px 60px green, 0px 0px 100px green,
+    0px 0px 70px green, 0px 0px 150px green;
+}
+.go:hover .green {
+  display: block;
+  color: rgb(5, 255, 5);
+}
+.go:hover #goo {
+  display: block;
+}
+/* Rider Images */
+#stop {
+  position: relative;
+  z-index: 1;
+  right: 530px;
+  top: 220px;
+  display: none;
+  height: 460px;
+  width: 460px;
+}
+#set {
+  position: relative;
+  z-index: 1;
+  right: 350px;
+  top: 140px;
+  display: none;
+  height: 460px;
+  width: 460px;
+}
+#goo {
+  position: relative;
+  z-index: 1;
+  left: 0px;
+  top: 55px;
+  display: none;
+}
+/* Connects the mud and surface */
+hr {
+  height: 20px;
+  background-color: black;
+  max-width: 1500px;
+}
+/* Down layer - mud */
+.mud {
+  position: relative;
+  bottom: 17px;
+  height: 100px;
+  background-color: brown;
+  max-width: 1500px;
+}
+/* Led Support Stand */
+p {
+  font-size: 40px;
+  text-align: center;
+  color: whitesmoke;
+  position: absolute;
+  top: 50px;
+  left: 190px;
+  display: none;
+  z-index: 2;
+}
+/* Boards 1 & 2 */
+.i1_board {
+  width: 200px;
+  height: 100px;
+  border: 5px solid rgb(94, 85, 85);
+  background-color: black;
+  position: relative;
+  bottom: 580px;
+  left: 650px;
+  z-index: 1;
+}
+.i2_board {
+  width: 200px;
+  height: 100px;
+  border: 5px solid rgb(94, 85, 85);
+  background-color: black;
+  position: relative;
+  bottom: 1363px;
+  left: 950px;
+  z-index: 1;
+}
+/* Board stings*/
+.i1_sting {
+  height: 60px;
+  width: 0px;
+  border: 6px dashed black;
+  background-color: rgb(94, 85, 85);
+  position: relative;
+  bottom: 750px;
+  left: 700px;
+}
+.i2_sting {
+  height: 60px;
+  width: 0px;
+  border: 6px dashed black;
+  background-color: rgb(94, 85, 85);
+  position: relative;
+  bottom: 825px;
+  left: 800px;
+}
+.i3_sting {
+  height: 60px;
+  width: 0px;
+  border: 6px dashed black;
+  background-color: rgb(94, 85, 85);
+  position: relative;
+  bottom: 1540px;
+  left: 1000px;
+}
+.i4_sting {
+  height: 60px;
+  width: 0px;
+  border: 6px dashed black;
+  background-color: rgb(94, 85, 85);
+  position: relative;
+  bottom: 1610px;
+  left: 1100px;
+}
+/* Board Support */
+.base {
+  height: 500px;
+  width: 15px;
+  border: 6px solid black;
+  background-color: black;
+  position: relative;
+  bottom: 900px;
+  left: 900px;
+}
+.left_support {
+  height: 5px;
+  width: 535px;
+  border: 6px solid black;
+  background-color: black;
+  position: relative;
+  bottom: 1420px;
+  left: 630px;
+  border-radius: 10px;
+}
+marquee {
+  position: relative;
+  bottom: 1620px;
+  left: 965px;
+  height: 100px;
+  color: yellow;
+  width: 180px;
+  z-index: 1;
+  text-align: center;
+}
+pre {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-style: bold;
+  text-transform: capitalize;
+}
